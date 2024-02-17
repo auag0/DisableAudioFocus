@@ -12,9 +12,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
-        maven { url = java.net.URI("https://api.xposed.info/") }
+        maven("https://api.xposed.info/")
     }
 }
 
-rootProject.name = "Disable AudioFocus"
+rootProject.name = "DisableAudioFocus"
 include(":app")

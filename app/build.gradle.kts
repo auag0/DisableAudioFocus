@@ -1,18 +1,27 @@
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
-    namespace = "com.anago.disableaudiofocus"
-    compileSdk = 33
+    namespace = "io.github.auag0.disableaudiofocus"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.anago.disableaudiofocus"
+        applicationId = "io.github.auag0.disableaudiofocus"
         minSdk = 24
-        targetSdk = 33
-        versionCode = 1
-        versionName = "1.0"
+        targetSdk = 34
+        versionCode = 100000
+        versionName = "1.0.0"
+    }
+
+    signingConfigs {
+        create("release") {
+            storeFile = File(projectDir, "release-keystore.jks")
+            storePassword = System.getenv("storePassword")
+            keyAlias = System.getenv("keyAlias")
+            keyPassword = System.getenv("keyPassword")
+        }
     }
 
     buildTypes {
@@ -23,7 +32,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = signingConfigs.getByName("release")
         }
     }
     compileOptions {
@@ -33,8 +42,13 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    packaging {
+        resources.excludes.add("**/kotlin/**")
+        resources.excludes.add("kotlin-tooling-metadata.json")
+    }
 }
 
 dependencies {
-    compileOnly("de.robv.android.xposed:api:82")
+    compileOnly(libs.xposed.api)
+    compileOnly(libs.xposed.api.sources)
 }

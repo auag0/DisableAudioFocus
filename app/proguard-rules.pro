@@ -19,4 +19,4 @@
 # If you keep the line number information, uncomment this to
 # hide the original source file name.
 #-renamesourcefileattribute SourceFile
--keep class com.anago.disableaudiofocus.MainHook
+-keep class io.github.auag0.disableaudiofocus.MainHook

@@ -12,7 +12,10 @@
             android:value="@string/module_description" />
         <meta-data
             android:name="xposedminversion"
-            android:value="93" />
+            android:value="83" />
+        <meta-data
+            android:name="xposedscope"
+            android:value="android" />
     </application>
 
 </manifest>

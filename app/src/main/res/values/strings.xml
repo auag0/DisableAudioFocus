@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name" translatable="false">Disable AudioFocus</string>
-    <string name="module_description">Disable AudioFocus</string>
+    <string name="app_name" translatable="false">DisableAudioFocus</string>
+    <string name="module_description">Disable audio focus</string>
 </resources>
