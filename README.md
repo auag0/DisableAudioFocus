@@ -1,5 +1,6 @@
 # DisableAudioFocus
-By disabling audio focus with this module, you can simultaneously play multiple videos and audios
+By disabling audio focus with this module, you can simultaneously play multiple videos and audios  
+このモジュールで音声フォーカスを無効化することで複数の動画や音声を同時で再生出来るようにします
 
 ## usage
 1. Download the APK([here](https://github.com/auag0/DisableAudioFocus/releases/latest)) and install APK on device
