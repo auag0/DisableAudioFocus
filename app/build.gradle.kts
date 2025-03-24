@@ -11,8 +11,8 @@ android {
         applicationId = "io.github.auag0.disableaudiofocus"
         minSdk = 24
         targetSdk = 35
-        versionCode = 100000
-        versionName = "1.0.0"
+        versionCode = 101000
+        versionName = "1.1.0"
     }
 
     signingConfigs {
