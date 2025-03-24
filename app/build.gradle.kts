@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "io.github.auag0.disableaudiofocus"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "io.github.auag0.disableaudiofocus"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 100000
         versionName = "1.0.0"
     }
