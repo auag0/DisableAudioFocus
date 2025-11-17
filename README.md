@@ -1,5 +1,7 @@
 # DisableAudioFocus
 
+This project is no longer actively maintained. However, I still use it personally, so I may fix issues if I encounter any problems.
+
 This module allows you to disable audio focus, enabling you to play multiple videos and audios simultaneously.
 
 ## Features
